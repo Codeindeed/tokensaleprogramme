@@ -1,5 +1,8 @@
 use anchor_lang::prelude::*;
-use anchor_spl::token::{self, Mint, Token, TokenAccount, MintTo};
+use anchor_spl::{
+    associated_token::AssociatedToken,
+    token::{self, Mint, MintTo, Token, TokenAccount},
+};
 
 #[derive(Accounts)]
 pub struct MintToken<'info> {
